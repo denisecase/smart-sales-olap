@@ -1,0 +1,22 @@
+2024-11-25 10:43:14.175 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2024-11-25 10:43:14.175 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2024-11-25 10:43:14.175 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2024-11-25 10:43:14.198 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['DayOfWeek', 'product_id', 'customer_id']
+2024-11-25 10:43:14.201 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2024-11-25 10:43:14.201 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2024-11-25 10:43:14.202 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2024-11-25 10:43:20.113 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2024-11-25 10:43:20.114 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2024-11-25 10:43:20.117 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2024-11-25 10:43:20.118 | INFO     | __main__:analyze_sales_by_weekday:66 - Sales aggregated by DayOfWeek successfully.
+2024-11-25 10:43:20.119 | INFO     | __main__:identify_least_profitable_day:77 - Least profitable day: Friday with revenue $8617.76.
+2024-11-25 10:43:20.119 | INFO     | __main__:main:123 - Least profitable day: Friday
+2024-11-25 10:43:20.119 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2024-11-25 10:43:20.255 | INFO     | __main__:visualize_sales_by_weekday:104 - Visualization saved to data\results\sales_by_day_of_week.png.
+2024-11-25 10:43:23.290 | INFO     | __main__:main:128 - Analysis and visualization completed successfully.
+2024-11-25 10:43:53.121 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2024-11-25 10:43:53.121 | INFO     | __main__:main:110 - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2024-11-25 10:43:53.121 | INFO     | __main__:load_olap_cube:48 - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2024-11-25 10:43:53.138 | INFO     | __main__:analyze_top_product_by_weekday:64 - Top products identified for each day of the week.
+2024-11-25 10:43:53.340 | INFO     | __main__:visualize_sales_by_weekday_and_product:101 - Stacked bar chart saved to data\results\sales_by_day_and_product.png.
+2024-11-25 10:43:58.768 | INFO     | __main__:main:121 - Analysis and visualization completed successfully.
