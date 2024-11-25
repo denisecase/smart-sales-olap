@@ -159,4 +159,4 @@ Which day of the week has the least sales: Friday
 
 [Goal: Sales by Product - by Day of Week]()
 
-![Sales by Product by Day of Week](data\results\sales_by_day_and_product.png)
+![Sales by Product by Day of Week](data/results/sales_by_day_and_product.png)
